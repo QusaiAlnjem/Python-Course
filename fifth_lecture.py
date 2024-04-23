@@ -70,6 +70,15 @@ def numbers():
     return nums
 print(*numbers())
 
+# *Args **Kwargs
+def profile(Name, Age, *Skills, **Certificates):
+    print(Name)
+    print(Age)
+    print(Skills)
+    print(Certificates)
+
+profile("Qusai", 20, "Python", "C++", "Sql", Bachelor="CE", Master="AI", PhD="Robotics")
+
 " Recursion Function "
 def factorial(num):
     if num == 0:
@@ -84,7 +93,7 @@ print(factorial(10))
 def add(x,y):
     return x + y
 
-# lambda inputs : output
+# lambda inputs: output
 result = lambda x,y : x+y
 print(result(5,10))
 
